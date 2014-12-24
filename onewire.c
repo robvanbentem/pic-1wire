@@ -10,7 +10,6 @@
  */
 char ow_reset() {
     OWOUT;
-    OWPIN = 0;
     __delay_us(480); // wait for 480us+
 
     OWIN;
@@ -29,7 +28,6 @@ char ow_reset() {
  */
 void ow_write_bit(char b) {
     OWOUT;
-    OWPIN = 0;
 
     if (b) {
         __delay_us(6);
@@ -50,7 +48,6 @@ void ow_write_bit(char b) {
  */
 char ow_read_bit() {
     OWOUT;
-    OWPIN = 0;
     __delay_us(6);
 
     OWIN;
