@@ -1,5 +1,5 @@
-#ifndef _oonfig_h
-#define _oonfig_h
+#ifndef _onewire_h
+#define _onewire_h
 
 #define OWPIN PORTBbits.RB6
 #define OWIN OWPIN = 1
